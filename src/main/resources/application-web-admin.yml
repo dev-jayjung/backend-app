@@ -1,0 +1,19 @@
+spring:
+  config:
+    import:
+      - optional:classpath:application-core-common.yml
+      - optional:classpath:application-core-admin.yml
+  thymeleaf:
+    cache: false
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${keycloak.server-url}/realms/${keycloak.realm}
+
+springdoc:
+  swagger-ui:
+    tags-sorter: alpha
+    operations-sorter: alpha
+    doc-expansion: none
+  default-produces-media-type: application/json

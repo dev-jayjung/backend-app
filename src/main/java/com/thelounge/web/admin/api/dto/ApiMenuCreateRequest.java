@@ -1,0 +1,26 @@
+package com.thelounge.web.admin.api.dto;
+
+import com.thelounge.core.common.type.ServiceStatus;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class ApiMenuCreateRequest {
+
+    private String groupCode;
+
+    private String code;
+
+    private String name;
+
+    private Integer displayOrdinal;
+
+    private ServiceStatus onService;
+
+    private String linkUrl;
+
+    private String memo;
+
+}

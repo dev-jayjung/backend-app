@@ -1,0 +1,34 @@
+package com.thelounge.web.admin.api.dto;
+
+import com.thelounge.core.common.dto.BaseResult;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class ApiSendCompanyDataResponse extends BaseResult {
+
+    private Long uid;
+
+    private String apiAccountId;
+
+    private String companyName;
+
+    private String type;
+
+    private Long loungeCouponIssueHistoryUid;
+
+    private String couponNum;
+
+    private Integer admissionCount;
+
+    private Integer useType;
+
+    private Integer sendType;
+
+    private String jsonData;
+
+    private String responseData;
+
+}
